@@ -1,0 +1,313 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin-SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: 
+%\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{.6,0,0} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge \textsc{Ryan Beauchemin}}\bigskip\par} % Your name
+
+\section{Contact Information}
+
+\begin{tabular}{rl}
+%\textsc{Place and Date of Birth:} & Riverside, California  | 09 November 1991 \\
+\textsc{Current Address:} & 203 Intern Way, Durham, NC \\
+\textsc{Phone Number:} & +1 (919) 628 6854\\
+\textsc{Primary Email:} & \href{mailto:ryan.w.beauchemin@gmail.com}{ryan.w.beauchemin@gmail.com}\\
+\textsc{Secondary Email:} & \href{mailto:beauchem@live.unc.edu}{beauchem@live.unc.edu}
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Jun 2014-Current} & Research Assistant at the Department of Physics and Astronomy, \emph{UNC} \\ 
+& \footnotesize{I am currently participating in research with the RESOLVE team under Sheila Kannappan (details \textbf{\href{http://resolve.astro.unc.edu/}{here}}). I have been trained in observation techniques for remote telescopes, and dynamic analysis of output, as well as deeper reduction techniques. I have helped to create and test a new multislit spectrum slicer for the SOAR telescope in Chile (now an active instrument). I have examined correlations between the photometric properties of galaxies and differences in kinematic and photometric inclinations, and presented findings at AAS 2015 in Seattle, WA.}\\
+\multicolumn{2}{c}{} \\
+
+%-----------------------------------------------
+
+\textsc{Jan 2014-Aug 2014} & Research Assistant at the Department of Physics and Astronomy, \emph{UNC} \\ 
+& \footnotesize{I have aided in creating the largest database for Gamma Ray Burst afterglows using all known documentation for each burst available on the SAO/NASA Astrophysics Data System, which provides information about magnitudes in different bands as a function of time after the burst, over a wide swathe of types of bursts. My work involved data mining ADS for the creation of a MySQL server, with much more easily accessible data, some day creating new opportunities in a more complete analysis of GRB afterglows using all available public data. The database will be made public when completed.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Oct 2013-Current} & Teaching Assistant at the Department of Physics and Astronomy, \emph{UNC} \\
+& \footnotesize{In this position, I am an assistant for the lab component of the University of North Carolina's Introduction to Astronomy course. Objectives are to help students understand and enjoy their first steps into exploring astronomy. I've found that the best way that I could help students is to make them laugh and provide them with fun mnemonics. It was an amazing experience, and I felt that the students took a lot away from the course.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jun 2013-Oct 2013} & Summer Intern at the Astronomy Research Center, \emph{Raleigh}\\
+& \footnotesize{I began by designing informative videos for patrons of the Museum of Natural Science, then join Dr. Patrick Treuthardt in completing research on the formation and curvature of dust lanes in barred spiral galaxies, with galaxies selected based on resolutions and pattern speeds from a previous paper. Answering questions about astrophysical phenomena and conducting H$\alpha$ sun observations on the roof were also a part of daily work, but my help with research involved using IRAF and DS9 to correct over 40 galaxies for inclination, and then to create B-R color index maps for each to intensify the dust features. The preliminary results were presented at AAS 2014 (details \textbf{\href{http://adsabs.harvard.edu/abs/2014AAS...22345312T}{here}}).}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan 2013-Jun 2013} & STEM Lab Assistant at Wake Technical Community College, \emph{Raleigh}\\
+& \footnotesize{The STEM lab was provided by the Math club and was a truly exciting experience for me to get a first look at teaching. I worked with students in need of help with STEM material, though this was mostly dedicated to help with physics and mathematics. This service was free of charge for students, and was provided through Wake Tech's Math Club.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan 2011-Current} & Waiter and Bartender at Tyler's Taproom, \emph{Raleigh, Durham, Carrboro}\\
+& \footnotesize{Though this is a necessity to financially supplement my education, the perks of working at a bar are quite significant. Many of the smaller grants and scholarships that I have applied for I have heard about from friendly patrons visiting for local conferences, or regulars teaching at local universities. And meeting these patrons, talking with them about their research, and taking their cards allows me to build connections and get an idea of where I want to go to graduate school.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{July} 2015 & Bachelor of Science Degree in \textsc{Physics}, \textbf{University of North Carolina}, Chapel Hill\\
+& \small Major: Astrophysics | \emph{Emphasis on Galaxy Evolution and Dynamics}\\
+&\normalsize \textsc{Gpa}: 3.0/4.0\\%\hyperlink{unc}{\hfill | \footnotesize Courses and Grades}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{July} 2012 & Associate Degree in \textsc{Science}, \textbf{Wake Technical Community College}, Raleigh \\
+& \small Graduated with the highest honors  | \emph{Emphasis on Physics and Astronomy} \normalsize \\
+&\normalsize \textsc{Gpa}: 3.9/4.0\\% \hyperlink{wt}{\hfill| \footnotesize Courses and Grades}\\
+&\\
+
+%------------------------------------------------
+
+%\textsc{Fall} 2009 & High School Dual Enrollment Semester at \textbf{La Sierra University}, Riverside\\
+%& \textsc{Gpa}: 4.0/4.0 \hyperlink{lsu}{\hfill | \footnotesize Courses and Grades}\\
+%&\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND ORGANIZATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Leadership and Organizations}
+
+\begin{tabular}{rl}
+
+2014-\textsc{Current} & Member of Dr. Kannappan's RESOLVE team at UNC\\
+2014-\textsc{Current} & Resource Manager of UNC's Society of Physics Students\\
+2014-\textsc{Current} & Member of Dr. Dan Reichart's GRB team at UNC\\
+2013-\textsc{Current} & Member of UNC's Society of Physics Students\\
+2012-2013 & National Community College Aerospace Scholar (NASA)\\
+2012-\textsc{Current} & Member of the Mu Alpha Theta Math Honor Society\\
+2011-2012 & Senator of the Student Government at Wake Technical CC\\
+2011-\textsc{Current} & Member of the Phi Theta Kappa Honor Society\\
+2010-2013 & Officer of Wake Technical CC's Math Club\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS AND CERTIFICATES
+%----------------------------------------------------------------------------------------
+
+\section{Awards and Certificates}
+
+\begin{tabular}{rl}
+2015 & Recipient of SKYNET Undergraduate Research Scholarship\\
+2014 & UNC OUR Travel Grant for American Astronomical Society 225\textsuperscript{th} Meeting\\
+2014 & Beneficiary of NSF CAREER Award Supplement\\
+2013 & Recipient of North Carolina Space Grant for Undergraduates\\
+2013 & Accepted as student astronomer at NRAO WV for ERIRA-UNC\\
+2013 & Second place at the southeast regional calculus competition in GA\\
+2012 & First place at the North Carolina Calculus competition in Gastonia \\
+2012 & Second place at NASA-MSFC NCAS rover competition\\
+2012 & Third place school wide SML competition through AMATYC\\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{rlp{11cm}}
+Programming and Analysis: & C++, emacs, \textsc{DS9}, \textsc{GAIA}, IDL, Mac OSX, \textsc{IRAF}, \textsc{Linux},\\
+&Mathematica, \textsc{MATLAB}, MySQL, \textbf{Python}, \textsc{Xcode}, X11\\
+
+Designing and Show: & Adobe Photoshop, GIMP, Keynote, {\fb \LaTeX}, Libre Office\\
+
+Physical Manipulation: & Soldering, Metal/Woodworking, Component Calibration
+   \setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}
+\end{tabular}
+
+ %Last semester, I created a key to the paper-towel dispenser on our floor of the physics department, and then used a pen spring to repair it.
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+
+\textsc{English:} & Native\\
+
+\textsc{French:} & Conversational\\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Research Interests}
+
+Galaxy Evolution and Morphology, Halo Theory and Dark Matter, Gamma Ray Bursts, Radio Astronomy, Kinematics leading to Star Formation, Instrumentation, and Modeling.
+
+%\textsc{Downtime}: Hiking, Running, Swimming, Climbing, Painting, Reading, Making and Listening to Music, Singing and Dancing, and Watching Netflix.
+
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+%\par{\centering\Large \hypertarget{unc}{Bachelor of Science Degree in \textsc{Physics: Astrophysics} \\ at the \textsc{University of North Carolina}, Chapel Hill}\par}\vspace{0.4cm}
+%%\large{\centering Grades\par}\normalsize
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Course}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Advanced Math Methods I & B & 3\\
+%Astrophysics II & A & 3\\
+%Electrodynamics I & C & 3\\
+%Electrodynamics II & C+ & 3\\
+%Electronics I & -- & 4\\
+%Epistemology in Physics & A & 1\\
+%Independent Research (AMP) & A & 1\\
+%Independent Research (RESOLVE) & -- & 3\\
+%Introduction to Astronomy II & A- & 3\\
+%Mechanics I & B- & 3\\
+%Modern Radio Astronomy (ERIRA) & A & 1\\
+%Modern Physics & B- & 3\\
+%Modern Physics Lab & A- & 1\\
+%Numerical Techniques in Physics & B+ & 4\\
+%Observational Astronomy & -- & 4\\
+%Quantum Mechanics I & C & 3\\
+%Quantum Mechanics II & -- & 3\\
+%Stars, Galaxies, and Cosmology & A- & 1\\
+%Thermal Physics & -- & 3\\
+%Advanced French & B & 3\\
+%& Total & 37 (54)\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{3.022}
+%\end{tabular}\bigskip
+%%\footnotesize{Note: Due to the unforeseen requirement that each student at UNC graduates within eight semesters, as a transfer student, I have been forced to take my sophomore and junior major requirement courses simultaneously, leading to a disheartening drop in GPA; however, I assure the reader this is not due completely to a lack of understanding, but is due mostly to a difficult load, and I will have a normal senior year to make up for it.}\\\
+%\end{center}
+%\hrule
+%\bigskip
+%
+%%------------------------------------------------
+%
+%\par{\centering\Large \hypertarget{wt}{Associate of Science Degree \\ at \textsc{Wake Technical Community College}, Raleigh}\par}\vspace{0.4cm}
+%%\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Course}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Calculus I & A & 4\\
+%Calculus II & A & 4\\
+%Calculus III & A & 4\\
+%Differential Equations & A & 3\\
+%General Physics I & A & 4\\
+%General Physics II & A & 4\\
+%General Chemistry I & A & 4\\
+%General Psychology & A & 3\\
+%Introduction to Astronomy I & A & 4\\
+%Introduction to Sociology & A & 3\\
+%Introduction to Programming & A & 3\\
+%Introduction to Logic & B & 3\\
+%Elementary French I & A & 4\\
+%Music Appreciation & A & 3\\
+%Western Civilization I & B & 3\\
+%British Literature I & B & 3\\
+%Public Speaking & A & 3\\
+%Painting I & A & 3\\
+%Tennis & A & 1\\
+%& Total & 69\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{3.857}
+%\end{tabular}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+%\newpage
+%
+%\par{\centering\Large \hypertarget{lsu}{Dual Enrollment at \textsc{La Sierra University}, Riverside}\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Course}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%\hline
+%College English I & A & 3\\
+%College English II & A & 3\\
+%& &\\\cline{2-3}
+%& \textsc{Gpa} & \textbf{4.0}
+%\end{tabular}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

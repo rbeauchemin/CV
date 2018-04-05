@@ -25,8 +25,19 @@
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
+\fontspec [Path = /Users/rwbeauch/Library/Fonts/,
+    UprightFont = Fontin-Regular,
+    BoldFont = Fontin-Bold,
+    ItalicFont = Fontin-Italic,
+    SmallCapsFont = Fontin-SmallCaps
+ ] {Fontin}
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin-SmallCaps]{Fontin} % Main document font
+\setmainfont [Path = /Users/rwbeauch/Library/Fonts/,
+    UprightFont = Fontin-Regular,
+    BoldFont = Fontin-Bold,
+    ItalicFont = Fontin-Italic,
+    SmallCapsFont = Fontin-SmallCaps
+ ] {Fontin} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
@@ -58,12 +69,11 @@
 
 \section{Contact} %Contact Information better?
 
-\begin{tabular}{rl}
+\begin{tabular}{r|l}
 %\textsc{Place and Date of Birth:} & Riverside, California  | 09 November 1991 \\
-\textsc{Current Address:} & 135 Jocelyn Lane \#306, Mooresville, NC \\
-\textsc{Phone Number:} & +1 (919) 628 6854\\
-\textsc{Primary Email:} & \href{mailto:ryan.w.beauchemin@gmail.com}{ryan.w.beauchemin@gmail.com}\\
-\textsc{Secondary Email:} & \href{mailto:vc.Ryan.Beauchemin@lowes.com}{vc.Ryan.Beauchemin@lowes.com}\\
+\textsc{Address} & 509 W Lowrance Avenue Mooresville, NC 28115 \\
+\textsc{Email} & \href{mailto:ryan.w.beauchemin@gmail.com}{ryan.w.beauchemin@gmail.com}\\
+\textsc{Phone} & +1 (919) 628 6854\\
 \end{tabular}
 \bigskip
 
@@ -75,42 +85,56 @@
 
 \begin{tabular}{r|p{11cm}}
 
-\textsc{Aug 2015 - Current} & Behavioral Algorithm Developer / Data Analyst at Nabler, \emph{Mooresville} \\
-& \footnotesize{On the Personalization and Optimization team at Lowe's Home Improvement's dot com division, I create algorithms utilizing merchant and user data to provide visitors with intelligent and personalized recommendations. I also analyze clickstream, orders, cart additions, and revenue to optimize the experience.}\\
+\textsc{Dec 2017 - Current} & Senior Data Scientist, \emph{Lowe's Home Improvement} \\
+& \footnotesize{Currently continuing support of past functions and implementing best practice machine learning through spark on Hadoop, with a focus on delivery.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
-\textsc{Jun 2014 - Aug 2015} & Research Assistant at the Department of Physics and Astronomy, \emph{UNC} \\ 
+\textsc{Feb 2017 - Dec 2017} & Data Scientist, \emph{Lowe's Home Improvement} \\
+& \footnotesize{Switching from a dot com support to enterprise-wide support, I had the opportunity to interview and hire new employees, starting a brand new data science group. The enterprise shift led us to open many new connections and work on projects across the organization.}\\
+
+\multicolumn{2}{c}{} \\
+
+%-----------------------------------------------
+
+\textsc{Aug 2015 - Feb 2017} &  Data Analyst / Web Analyst, \emph{Nabler / Lowe's Home Improvement} \\
+& \footnotesize{On the Personalization and Optimization team at Lowe's Home Improvement's dot com division, I created algorithms utilizing product and user data to provide visitors with intelligent and personalized recommendations. I also analyzed clickstream, orders, cart additions, and revenue to optimize the experience.}\\
+
+\multicolumn{2}{c}{} \\
+
+%-----------------------------------------------
+
+\textsc{Jun 2014 - Aug 2015} & Research Assistant, \emph{UNC Physics and Astronomy} \\ 
 & \footnotesize{As a part of the \textbf{\href{http://resolve.astro.unc.edu/}{RESOLVE}} team under Dr. Sheila Kannappan, I have been trained in dynamic observation, reduction of data, and instrumentation for the 4.1-meter Chilean SOAR telescope, and my research involved determination of three dimensional information from two dimensional projections.}\\
 %techniques for remote telescopes, having observed many nights on the Chilean 4.1m SOAR telescope, and also completing reduction of these data. I have helped to create and calibrate a new multi-slit spectrum slicer for the GOODMAN spectrograph that is now an active instrument. I have examined correlations between the photometric properties of galaxies and differences in kinematic and photometric inclinations, presenting results at AAS 2015 in Seattle, WA. I have created a code that fits velocity field data to functions defined by Courteau.}\\
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
-\textsc{Jan 2014 - Aug 2014} & Research Assistant at the Department of Physics and Astronomy, \emph{UNC} \\ 
+\textsc{Jan 2014 - Aug 2014} & Research Assistant, \emph{UNC Physics and Astronomy} \\ 
 & \footnotesize{In Dr. Dan Reichart's group, I helped in the creation of the largest database for Gamma Ray Burst afterglows, working heavily with spreadsheets and data manipulation in a massive SQL database.}\\
 %using all known documentation for each burst available on the SAO/NASA Astrophysics Data System, which provides information about magnitudes in different bands as a function of time after the burst, over a wide swathe of types of bursts. My work involved data mining ADS for the creation of a MySQL server, with much more easily accessible data, creating new opportunities in a more complete analysis of GRB afterglows using all available public data. The database will be made public when completed.}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{Oct 2013 - May 2015} & Teaching Assistant at the Department of Physics and Astronomy, \emph{UNC} \\
-& \footnotesize{I was an assistant for two years in the lab component of the University of North Carolina's Introductory Astronomy course. Teaching people about subjects that I deeply understand is incredibly rewarding.}\\
+\textsc{Oct 2013 - May 2015} & Teaching Assistant, \emph{UNC Physics and Astronomy} \\
+& \footnotesize{I was an assistant for two years in the lab component of the University of North Carolina's Introductory Astronomy course. Teaching people about subjects that I know and love is incredibly rewarding.}\\
 %Objectives are to help students understand and enjoy their first steps into exploring astronomy. I've found that the best way that I could assist students is to make them laugh and provide them with new perspectives. I feel that the students learn a lot more when they are enjoying the material.}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{Jun 2013 - Oct 2013} & Summer Intern at the Astronomy Research Center, \emph{Raleigh}\\
-& \footnotesize{Working with Dr. Rachel Smith and Dr. Patrick Treuthardt, I designed informative videos using iMovie and Keynote, gave presentations on solar phenomena with an H$\alpha$ filtered solar telescope, and used IRAF to determine intrinsic properties of spiral galaxies.}\\
+\textsc{Jun 2013 - Oct 2013} & Analyst, \emph{Astronomy Research Center}\\
+& \footnotesize{Interning with Dr. Rachel Smith and Dr. Patrick Treuthardt, I designed informative videos using iMovie and Keynote, gave presentations on solar phenomena with an H$\alpha$ filtered solar telescope, and used IRAF to determine intrinsic properties of spiral galaxies. In 2017, our team was featured with an image I took of the first discovered \href{http://www.wired.co.uk/article/new-hoag-type-galaxy-discovered}{double Hoag's galaxy}.}\\
 %I began by designing informative videos for patrons of the Museum of Natural Science, then joined Dr. Patrick Treuthardt in completing research on the formation and curvature of dust lanes in barred spiral galaxies, with galaxies selected based on resolutions and pattern speeds from a previous paper. Answering questions about astrophysical phenomena and conducting H$\alpha$ sun observations on the roof were also a part of daily work. My research involved using IRAF and DS9 to correct over 40 galaxies for inclination, and creating B-R color index maps for each to intensify the dust features. The preliminary results were presented at AAS 2014 (details \textbf{\href{http://adsabs.harvard.edu/abs/2014AAS...22345312T}{here}}).}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{Jan 2013 - Jun 2013} & STEM Lab Assistant at Wake Technical Community College, \emph{Raleigh}\\
+\textsc{Jan 2013 - Jun 2013} & STEM Lab Assistant, \emph{Wake Technical Community College}\\
 & \footnotesize{The STEM lab was created by the Math club and was a great introduction into teaching. I mostly worked with students who needed help with coding, physics, math, and astronomy.}\\
 \multicolumn{2}{c}{} \\
 
@@ -129,16 +153,16 @@
 \section{Education}
 
 \begin{tabular}{rl}	
-\textsc{July} 2015 & Bachelor of Science Degree in \textsc{Physics}, \textbf{University of North Carolina}, Chapel Hill\\
+\textsc{July} 2015 & Bachelor of Science Degree in Physics, \emph{University of North Carolina at Chapel Hill}\\
 & \small Major: Astrophysics | \emph{Emphasis on Galaxy Evolution and Dynamics}\\
-&\normalsize \textsc{Gpa}: 3.0/4.0\\%\hyperlink{unc}{\hfill | \footnotesize Courses and Grades}\\
+&\normalsize \textsc{Gpa}: 3.0\\%\hyperlink{unc}{\hfill | \footnotesize Courses and Grades}\\
 &\\
 
 %------------------------------------------------
 
-\textsc{July} 2012 & Associate Degree in \textsc{Science}, \textbf{Wake Technical Community College}, Raleigh \\
+\textsc{July} 2012 & Associate Degree in Science, \emph{Wake Technical Community College} \\
 & \small Graduated with the highest honors  | \emph{Emphasis on Physics and Astronomy} \normalsize \\
-&\normalsize \textsc{Gpa}: 4.0/4.0\\% \hyperlink{wt}{\hfill| \footnotesize Courses and Grades}\\
+&\normalsize \textsc{Gpa}: 4.0\\% \hyperlink{wt}{\hfill| \footnotesize Courses and Grades}\\
 
 %------------------------------------------------
 
@@ -151,47 +175,28 @@
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{Skills}
+\section{Proficiencies}
 
 \begin{tabular}{rlp{11cm}}
-Programming / Analysis: &Alteryx, Aqua Data Studio, Emacs, Git, Hadoop, IDL, JavaScript,\\
+Languages &Bash, CSS, Emacs, Git, HiveQL, \textsc{HTML}, IDL, JavaScript, Mathematica, \\
 
-&Mathematica, \textsc{MATLAB}, \textbf{Python}, R, SQL, Teradata, XML\\
+&\textsc{MATLAB}, \textbf{Python}, R, Scala, Spark, Teradata, XML\\
 
 &in Linux, Mac OSX, and Windows environments\\
 
-Presenting and Design: &Adobe Photoshop, GIMP, Keynote, {\fb \LaTeX}, Libre/MS Office\\
+\\
 
-Specialized Astronomy: &\textsc{DS9}, \textsc{GAIA}, \textsc{IRAF}, RESOLVE Pipeline
+Tools &Alteryx, Anaconda, Aqua Data Studio, GIMP, Jupyter, Keynote, \\
 
-   \setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}
+&{\fb \LaTeX}, Libre/MS Office, Photoshop, Zeppelin\\
+
+\\
+
+Astronomy &\textsc{DS9}, \textsc{GAIA}, \textsc{IRAF}
+
 \end{tabular}
 \bigskip
 %\hspace*{.1cm} I also have experience Metalworking, Soldering, Woodworking, and 3D Printing
-
- %Last semester, I created a key to the paper-towel dispenser on our floor of the physics department, and then used a pen spring to repair it.
-
-
-%----------------------------------------------------------------------------------------
-%	LEADERSHIP AND ORGANIZATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Groups and Organizations}
-
-\begin{tabular}{rl}
-2014-2015 & Member of Dr. Kannappan's RESOLVE team at UNC\\
-2014-2015 & Resource Manager of UNC's Society of Physics Students\\
-2014-2015 & Member of Accessibility Resources team at UNC\\
-2013-2015 & Member of Dr. Dan Reichart's GRB team at UNC\\
-2013-2015 & Member of UNC's Society of Physics Students\\
-2012-2013 & National Community College Aerospace Scholar at NASA MSFC\\
-2012-2015 & Member of the Mu Alpha Theta Math Honor Society\\
-2011-2012 & Senator of the Student Government at Wake Technical CC\\
-2011-2015 & Member of the Phi Theta Kappa Honor Society\\
-2010-2013 & Officer of Wake Technical CC's Math Club\\
-&\\
-\end{tabular}
-\bigskip
 
 %----------------------------------------------------------------------------------------
 %	AWARDS AND CERTIFICATES
@@ -214,28 +219,50 @@ Specialized Astronomy: &\textsc{DS9}, \textsc{GAIA}, \textsc{IRAF}, RESOLVE Pipe
 \bigskip
 
 %----------------------------------------------------------------------------------------
+%	LEADERSHIP AND ORGANIZATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Groups and Organizations}
+
+\begin{tabular}{rl}
+2014-2015 & Member of Dr. Kannappan's RESOLVE team at UNC\\
+2014-2015 & Resource Manager of UNC's Society of Physics Students\\
+2014-2015 & Member of Accessibility Resources team at UNC\\
+2013-2015 & Member of Dr. Dan Reichart's GRB team at UNC\\
+2013-2015 & Member of UNC's Society of Physics Students\\
+2012-2013 & National Community College Aerospace Scholar at NASA MSFC\\
+2012-2015 & Member of the Mu Alpha Theta Math Honor Society\\
+2011-2012 & Senator of the Student Government at Wake Technical CC\\
+2011-2015 & Member of the Phi Theta Kappa Honor Society\\
+2010-2013 & Officer of Wake Technical CC's Math Club\\
+&\\
+\end{tabular}
+\bigskip
+
+
+%----------------------------------------------------------------------------------------
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
-
-\begin{tabular}{rl}
-
-\textsc{English:} & Native\\
-
-\textsc{French:} & Conversational\\
-
-\end{tabular}
-\bigskip
+%\section{Languages}
+%
+%\begin{tabular}{rl}
+%
+%\textsc{English:} & Native\\
+%
+%\textsc{French:} & Conversational\\
+%
+%\end{tabular}
+%\bigskip
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{Research Interests}
-
-Galaxy Evolution and Morphology, Dark Matter, Data Science, Gamma Ray Bursts,  Kinematics leading to Star Formation, Instrumentation, Radio Astronomy, Statistics, and Simulation.
-
+%\section{Research Interests}
+%
+%Galaxy Evolution and Morphology, Dark Matter, Data Science, Gamma Ray Bursts,  Kinematics leading to Star Formation, Instrumentation, Radio Astronomy, Statistics, and Simulation.
+%
 %\textsc{Downtime}: Hiking, Running, Swimming, Climbing, Painting, Reading, Making and Listening to Music, Singing and Dancing, and Watching Netflix.
 
 %----------------------------------------------------------------------------------------

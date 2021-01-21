@@ -48,12 +48,16 @@
 %\addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links and customizing them
-\definecolor{linkcolour}{rgb}{.6,0,0} % Link color
+\definecolor{linkcolour}{rgb}{0,.6,.8} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\titlespacing{\section}{0pt}{1pt}{0pt} % Spacing around sections
+
+
+\addtolength{\topmargin}{-.25in}
+\addtolength{\textheight}{1.75in}
 
 \begin{document}
 
@@ -64,35 +68,36 @@
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-\par{\centering{\huge \textsc{Ryan Beauchemin}}\par\bigskip}
-%\par{\centering{\huge \textsc{Ryan Beauchemin}}\par\vspace{-0.4cm}\rule{7.5cm}{0.4pt}\bigskip\par} % Name with line
-
-\section{Contact} %Contact Information better?
-
-\begin{tabular}{r|l}
-%\textsc{Place and Date of Birth:} & Riverside, California  | 09 November 1991 \\
-\textsc{Address} & 509 W Lowrance Avenue Mooresville, NC 28115 \\
-\textsc{Email} & \href{mailto:ryan.w.beauchemin@gmail.com}{ryan.w.beauchemin@gmail.com}\\
-\textsc{Phone} & +1 (919) 628 6854\\
-\end{tabular}
+\vspace{-10pt}
+\par{\huge \textsc{Ryan Beauchemin}\par}
+\textsc{\href{mailto:ryan.w.beauchemin@gmail.com}{ryan.w.beauchemin@gmail.com}}\\
+\textsc{Charlotte, North Carolina} \\
++1 (919) 628 6854\\
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
-
+\vspace{-10pt}
 \section{Experience} %Work Experience better?
 
 \begin{tabular}{r|p{11cm}}
 
-\textsc{Dec 2017 - Current} & Senior Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{In the senior role I have had the opportunity to hire and grow a team of 10 to handle requests from Lowe's Digital, building out a best-in-class product recommendations system, adding enhancements to the Fusion search engine, creating a dynamic navigation experience, all while leading an elite team to build out an Assortment Optimization toolkit for Merchandising.}\\
+\textsc{Jul 2019 - Present} & Principal Data Scientist, \emph{Lowe's Home Improvement} \\
+& \footnotesize{In the principal role I have grown my small team, continuing the build of the Assortment Planning Suite utilizing machine learning models built to identify localization opportunity from customer behavior. I am responsible for the Data Science portfolio for Merchandising and Marketing at Lowe's and lay out the roadmap and direction for Data Science, Data Engineering, and Software Engineering teams for related products. I am also responsible for providing technical expertise to the team from my background in building data science products for retail.}\\
+
+\multicolumn{2}{c}{} \\
+
+%-----------------------------------------------
+
+\textsc{Dec 2017 - Jul 2019} & Senior Data Scientist, \emph{Lowe's Home Improvement} \\
+& \footnotesize{In the senior role I had the opportunity to select and grow a team of 6 to build out an Assortment Planning Suite for Merchandising from scratch. I also had the opportunity to form the Data Science team responsible for recommendations and personalization to take over my previous work. I have worked to share knowledge on Agile methodology and cloud-based systems to align with modern practices.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
 \textsc{Feb 2017 - Dec 2017} & Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{Switching from a dot com support to enterprise-wide support, I had the opportunity to interview and hire new coworkers and start a new data science group. The enterprise shift led us to open many new connections and work on projects across the organization.}\\
+& \footnotesize{Switching from a dot com support to enterprise-wide support, I had the opportunity to interview and hire new folks to work with and start a new data science group at Lowe's. During this time, I finalized the product recommendations algorithms for Lowe's bringing more than 13\% improvement in incremental sales (A/B test measured) over just one year. The enterprise shift led us to open many new connections and work on projects across new organizations.}\\
 
 \multicolumn{2}{c}{} \\
 
@@ -105,22 +110,22 @@
 
 %-----------------------------------------------
 
-\textsc{Jun 2014 - Aug 2015} & Research Assistant, \emph{UNC Physics and Astronomy} \\ 
-& \footnotesize{As a part of the \textbf{\href{http://resolve.astro.unc.edu/}{RESOLVE}} team under Dr. Sheila Kannappan, I have been trained in dynamic observation, reduction of data, and instrumentation for the 4.1-meter Chilean SOAR telescope, and my research involved determination of three dimensional information from two dimensional projections.}\\
+\textsc{Jun 2014 - Aug 2015} & Astrophysicist, \emph{UNC Physics and Astronomy} \\ 
+& \footnotesize{As a part of the \textbf{\href{http://resolve.astro.unc.edu/}{RESOLVE}} team under Dr. Sheila Kannappan, I was responsible for dynamic observation, reduction of data, and instrumentation on the 4.1-meter Chilean SOAR telescope, and my research involved determination of three dimensional information from two dimensional projections of galaxies, \href{https://ui.adsabs.harvard.edu/abs/2015AAS...22533611B/abstract}{finding standard assumptions to be wrong.}}\\
 %techniques for remote telescopes, having observed many nights on the Chilean 4.1m SOAR telescope, and also completing reduction of these data. I have helped to create and calibrate a new multi-slit spectrum slicer for the GOODMAN spectrograph that is now an active instrument. I have examined correlations between the photometric properties of galaxies and differences in kinematic and photometric inclinations, presenting results at AAS 2015 in Seattle, WA. I have created a code that fits velocity field data to functions defined by Courteau.}\\
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
-\textsc{Jan 2014 - Aug 2014} & Research / Teaching Assistant, \emph{UNC Physics and Astronomy} \\ 
-& \footnotesize{In Dr. Dan Reichart's group, I helped in the creation of the largest database for Gamma Ray Burst afterglows, working heavily with spreadsheets and data manipulation in a massive SQL database. I was also an assistant in the lab component of the Introductory Astronomy course at UNC.}\\
+\textsc{Jan 2014 - Aug 2014} & Astrophysicist / Teaching Assistant, \emph{UNC Physics and Astronomy} \\ 
+& \footnotesize{In Dr. Dan Reichart's group, I worked with a strong team to create the largest database for Gamma Ray Burst afterglows, working heavily with spreadsheets and data manipulation in a massive SQL database. I was also an undergraduate teaching assistant in the lab component of the Astronomy courses at UNC.}\\
 %using all known documentation for each burst available on the SAO/NASA Astrophysics Data System, which provides information about magnitudes in different bands as a function of time after the burst, over a wide swathe of types of bursts. My work involved data mining ADS for the creation of a MySQL server, with much more easily accessible data, creating new opportunities in a more complete analysis of GRB afterglows using all available public data. The database will be made public when completed.}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{Jun 2013 - Oct 2013} & Research Assistant, \emph{Astronomy Research Center}\\
-& \footnotesize{I designed informative videos using iMovie and Keynote, gave presentations on solar phenomena with an H$\alpha$ filtered solar telescope, and developed tools to determine intrinsic properties of spiral galaxies. In 2017, our team was featured with an image I took of the first discovered \href{http://www.wired.co.uk/article/new-hoag-type-galaxy-discovered}{double Hoag's galaxy}.}\\
+\textsc{Jun 2013 - Oct 2013} & Research Assistant, \emph{NC Astronomy Research Center}\\
+& \footnotesize{I designed informative videos using iMovie and Keynote, gave presentations on solar phenomena with an H$\alpha$ filtered solar telescope, and developed tools to \href{https://ui.adsabs.harvard.edu/abs/2014AAS...22345312T/abstract}{determine intrinsic properties of spiral galaxies}. In 2017, our team was featured when a galaxy I discovered and imaged was determined as \href{http://www.wired.co.uk/article/new-hoag-type-galaxy-discovered}{the first ever discovered Double Hoag's galaxy}.}\\
 %I began by designing informative videos for patrons of the Museum of Natural Science, then joined Dr. Patrick Treuthardt in completing research on the formation and curvature of dust lanes in barred spiral galaxies, with galaxies selected based on resolutions and pattern speeds from a previous paper. Answering questions about astrophysical phenomena and conducting H$\alpha$ sun observations on the roof were also a part of daily work. My research involved using IRAF and DS9 to correct over 40 galaxies for inclination, and creating B-R color index maps for each to intensify the dust features. The preliminary results were presented at AAS 2014 (details \textbf{\href{http://adsabs.harvard.edu/abs/2014AAS...22345312T}{here}}).}\\
 \multicolumn{2}{c}{} 
 
@@ -140,7 +145,7 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-
+\vspace{-12pt}
 \section{Education}
 
 \begin{tabular}{rl}	
@@ -162,26 +167,27 @@
 %& \textsc{Gpa}: 4.0/4.0 \hyperlink{lsu}{\hfill | \footnotesize Courses and Grades}\\
 %&\\
 \end{tabular}
+\bigskip
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
-
+\vspace{-8pt}
 \section{Proficiencies}
 
 \begin{tabular}{rlp{11cm}}
-Languages &JavaScript, Jenkins, Node, \textbf{Python}, React, Regex, SQL/HiveQL, Spark, Shell\\
-
-&in Linux, Mac OSX, and Windows environments\\
-
-Tools &Alteryx, dBeaver, Git, Jupyter, {\fb \LaTeX}, Libre/MS Office, Zeppelin\\
+Programming &\textbf{Python}, Regex, Shell\\
+Frontend &\textbf{React}, Flux/Redux, JavaScript, Jenkins, Node\\
+Backend &\textbf{NodeTS}, NodeJS, express\\
+Data &\textbf{Phoenix HBase}, \textbf{Hive}, HDFS, Teradata, PostGres, Oozie\\
+CICD &\textbf{Git}, \textbf{Jenkins}, Spinnaker, GCR\\
+Cloud &GCR (+Docker), GCS, Kubernetes Engine, BigQuery, BigTable
 
 %\\
 
 %Astronomy &\textsc{DS9}, \textsc{GAIA}, \textsc{IRAF}
 
 \end{tabular}
-\bigskip
 %\hspace*{.1cm} I also have experience Metalworking, Soldering, Woodworking, and 3D Printing
 
 %----------------------------------------------------------------------------------------

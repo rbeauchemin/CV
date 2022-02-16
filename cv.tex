@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Plasmati Graduate CV
 % LaTeX Template
@@ -22,7 +23,7 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\documentclass[a4paper, 9pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 \fontspec [Path = /Users/rwbeauch/Library/Fonts/,
@@ -59,6 +60,11 @@
 \addtolength{\topmargin}{-.3in}
 \addtolength{\textheight}{1.75in}
 
+\usepackage{geometry}
+%\usepackage{showframe} %This line can be used to clearly show the new margins
+
+\newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -80,59 +86,57 @@
 \vspace{-10pt}
 \section{Experience} %Work Experience better?
 
-\begin{tabular}{r|p{11cm}}
+\begin{tabular}{r|p{14cm}}
 
 \textsc{Aug 2020 - Current} & Senior Manager Data Science and Analytics, \emph{Lowe's Home Improvement} \\
-& \footnotesize{Now, I am responsible for the Data Science portfolio for Merchandising and Marketing at Lowe's and lay out the roadmap and direction for Data Science, Data Engineering, Software Engineering and Analytics teams for related products. We have released multiple full stack applications to production and have automated CICD pipelines that ultimately utilize the power of Kubernetes on Cloud.}\\
+& \footnotesize{As the Data Science leader for Merchandising at Lowe’s with a team of 17 in the US and Bangalore, we created the Clustering and Assortment Planning Suite, the Space Optimization Kit, and Vendor Freight Optimization. These applications and the support we provide for them drives 2x in merchandising productivity with an incredibly efficient deep neural net model, with results explained simply via a UX-focused React application layer.
+More recently, I have joined the Platform team and taken the role of Sr SWE Manager, still leading a Data Science group, to build out autonomous Anomaly Detection for Data Scientists across Lowe's. This employs a novel technique of multi-modelling to create a powerful meta-algorithm capable of finding hard to detect anomalies.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
 \textsc{Jul 2019 - Aug 2020} & Principal Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{I worked to enhance the potential of my small team, continuing the build of the Assortment Planning Suite utilizing machine learning models built to identify localization opportunity from customer behavior, and built customer profiling and clustering for marketing. I continued to provide technical expertise and training to the core data science team.}\\
+& \footnotesize{As principal, my main goal was to get a set of data driven utilities ready for various aspects of the merchandising community at Lowe’s.
+With only four people, we were able to deliver a RNN-based demand model and expand the team to continue work, as well as a vendor freight optimization tool and a space optimization tool, driving measured incremental value in the millions and billions for margin and revenue respectively.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
 \textsc{Dec 2017 - Jul 2019} & Senior Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{I had the opportunity to select and grow a team of 6 to build out an Assortment Planning Suite for Merchandising from scratch. I also had the opportunity to form the Data Science team responsible for recommendations and personalization to take over my previous work. I learned and shared knowledge on Agile methodology and cloud-based systems to align with modern practices.}\\
+& \footnotesize{As a senior, I had the opportunity to form the Data Science team responsible for recommendations and personalization to take over my previous work.
+I learned and shared knowledge with the whole Data Science group on Agile methodology and cloud-based systems to align with modern practices, after being first to join the cloud within Lowe's Data Science.
+I also finalized transitioning algorithms originally created in Alteryx into more scalable and sustainable SQL scripts, before starting a new team in merchandising that would start tackling what is essentially recommendations for brick-and-mortar.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
 \textsc{Feb 2017 - Dec 2017} & Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{Switching from a dot com support to enterprise-wide support, I had the opportunity to interview and hire to start building the data science practice at Lowe's. During this time, I automated product recommendations algorithms bringing more than 13\% improvement in incremental sales (A/B measured) over one year. The enterprise shift led us to open many new connections and work on projects across new organizations.}\\
+& \footnotesize{As a founding member of Lowe's Data Science, I had the opportunity to interview and hire to start building the data science practice at Lowe’s that was created in Feb 2017. During this time, I also automated product recommendations algorithms bringing a 13\% improvement recommendations visibility with hundreds of millions in incremental revenue tested in an A/B framework. During this time we had a shift to focus on both digital and the rest of the enterprise. The enterprise shift led us to open many new connections and work on projects across new organizations.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
-\textsc{Aug 2015 - Feb 2017} &  Data Analyst / Web Analyst, \emph{Nabler / Lowe's Home Improvement} \\
-& \footnotesize{Starting on a team of 3 analysts at Lowes' dot com division, I created algorithms utilizing product and user data to provide visitors with intelligent and personalized recommendations. I created feedback loops trained on orders, cart additions, and revenue to optimize the experience. My work added so much additional revenue that we could start building data science as a practice at Lowe's.}\\
+\textsc{Aug 2015 - Feb 2017} &  Data Analyst, \emph{Nabler / Lowe's Home Improvement} \\
+& \footnotesize{Starting with just 3 analysts in Lowes’ digital team, I wanted to beat Adobe with my own algorithms utilizing product and user data to create personalized recommendations. I trained models on orders, cart additions, views and revenue to optimize the experience. This work beat Adobe by 250\% in incremental revenue, allowing us to end a \$7M contract and make the case for data science at Lowe’s.}\\
 
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
-
-\textsc{Jun 2014 - Aug 2015} & Astrophysicist, \emph{UNC Physics and Astronomy} \\ 
-& \footnotesize{As a part of the \textbf{\href{http://resolve.astro.unc.edu/}{RESOLVE}} team under Dr. Sheila Kannappan, I was responsible for dynamic observation, reduction of data, and instrumentation on the 4.1-meter Chilean SOAR telescope, and my research involved determination of three dimensional information from two dimensional projections of galaxies, \href{https://ui.adsabs.harvard.edu/abs/2015AAS...22533611B/abstract}{finding standard assumptions to be wrong.}}\\
 %techniques for remote telescopes, having observed many nights on the Chilean 4.1m SOAR telescope, and also completing reduction of these data. I have helped to create and calibrate a new multi-slit spectrum slicer for the GOODMAN spectrograph that is now an active instrument. I have examined correlations between the photometric properties of galaxies and differences in kinematic and photometric inclinations, presenting results at AAS 2015 in Seattle, WA. I have created a code that fits velocity field data to functions defined by Courteau.}\\
-\multicolumn{2}{c}{} \\
-
-%-----------------------------------------------
-
-\textsc{Jan 2014 - Aug 2014} & Astrophysicist / Teaching Assistant, \emph{UNC Physics and Astronomy} \\ 
-& \footnotesize{In Dr. Dan Reichart's group, I worked with a strong team to create the largest database for Gamma Ray Burst afterglows, working heavily with spreadsheets and data manipulation in a massive SQL database. I was also an undergraduate teaching assistant in the lab component of the Astronomy courses at UNC.}\\
 %using all known documentation for each burst available on the SAO/NASA Astrophysics Data System, which provides information about magnitudes in different bands as a function of time after the burst, over a wide swathe of types of bursts. My work involved data mining ADS for the creation of a MySQL server, with much more easily accessible data, creating new opportunities in a more complete analysis of GRB afterglows using all available public data. The database will be made public when completed.}\\
-\multicolumn{2}{c}{} \\
 
-%------------------------------------------------
+\textsc{Jun 2013 - Aug 2015} & Research Assistant, \emph{NC Astronomy Research Center \& UNC Astronomy}\\
+& \footnotesize{As a part of the \textbf{\href{http://resolve.astro.unc.edu/}{RESOLVE}} team under Dr. Sheila Kannappan, I have been trained in dynamic observation, reduction of data, and instrumentation for the 4.1-meter Chilean SOAR telescope, and my research involved \href{https://ui.adsabs.harvard.edu/abs/2015AAS...22533611B/abstract}{determination of three dimensional information from two dimensional projections}.
 
-\textsc{Jun 2013 - Oct 2013} & Research Assistant, \emph{NC Astronomy Research Center}\\
-& \footnotesize{I designed informative videos using iMovie and Keynote, gave presentations on solar phenomena with an H$\alpha$ filtered solar telescope, and developed tools to \href{https://ui.adsabs.harvard.edu/abs/2014AAS...22345312T/abstract}{determine intrinsic properties of spiral galaxies}. In 2017, our team was featured when a galaxy I discovered and imaged was determined to be \href{http://www.wired.co.uk/article/new-hoag-type-galaxy-discovered}{the first ever discovered Double Hoag's galaxy}.}\\
+In Dr. Dan Reichart's group, I helped in the creation of the largest database for Gamma Ray Burst afterglows, working heavily with spreadsheets and data manipulation in a massive SQL database. I was also an assistant in the lab component of the Introductory Astronomy course at UNC.
+
+I designed informative videos using iMovie and Keynote, gave presentations on solar phenomena with an H-alpha filtered solar telescope, and \href{https://ui.adsabs.harvard.edu/abs/2014AAS...22345312T/abstract}{developed tools to determine intrinsic properties of spiral galaxies}.
+
+In 2017, our team was featured with an image I took of \href{http://www.wired.co.uk/article/new-hoag-type-galaxy-discovered}{the first ever discovered Double Hoag's galaxy}.}\\
 %I began by designing informative videos for patrons of the Museum of Natural Science, then joined Dr. Patrick Treuthardt in completing research on the formation and curvature of dust lanes in barred spiral galaxies, with galaxies selected based on resolutions and pattern speeds from a previous paper. Answering questions about astrophysical phenomena and conducting H$\alpha$ sun observations on the roof were also a part of daily work. My research involved using IRAF and DS9 to correct over 40 galaxies for inclination, and creating B-R color index maps for each to intensify the dust features. The preliminary results were presented at AAS 2014 (details \textbf{\href{http://adsabs.harvard.edu/abs/2014AAS...22345312T}{here}}).}\\
 \multicolumn{2}{c}{} 
 
@@ -183,10 +187,10 @@
 \section{Proficiencies}
 
 \begin{tabular}{rlp{11cm}}
-Programming &\textbf{Python}, Regex, Shell\\
-Frontend &\textbf{React}, Flux/Redux, JavaScript, Jenkins, Node\\
-Backend &\textbf{NodeTS}, NodeJS, express\\
-Data &\textbf{Phoenix HBase}, \textbf{Hive}, HDFS, Teradata, PostGres\\
+Science &\textbf{Python}, Tensorflow, Keras\\
+Frontend &\textbf{React}, Flux/Redux, JavaScript, Node, Streamlit\\
+Backend &\textbf{NodeTS}, FastAPI, NodeJS, express\\
+Data &\textbf{Druid}, \textbf{Presto}, \textbf{Hive}, HDFS, Teradata, PostGres, and more SQL\\
 CICD &\textbf{Git}, \textbf{Jenkins}, Spinnaker, GCR, Oozie\\
 Cloud &GCR (+Docker), GCS, Kubernetes Engine, BigQuery, BigTable
 

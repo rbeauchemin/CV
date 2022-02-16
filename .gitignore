@@ -1,1 +1,6 @@
 .DS_Store
+cv.fdb_latexmk
+.gitignore
+cv.log
+cv.synctex.gz
+.gitignore

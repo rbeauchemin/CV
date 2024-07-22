@@ -49,7 +49,7 @@
 %\addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links and customizing them
-\definecolor{linkcolour}{rgb}{0,.6,.8} % Link color
+\definecolor{linkcolour}{rgb}{0,.5,.7} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
@@ -64,6 +64,9 @@
 %\usepackage{showframe} %This line can be used to clearly show the new margins
 
 \newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
 
 \begin{document}
 
@@ -83,56 +86,96 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
-\vspace{-5pt}
+%\vspace{-5pt}
 \section{Experience} %Work Experience better?
 
-\begin{tabular}{l|p{14cm}}
+\begin{tabular}{l|p{15.8cm}}
 %-----------------------------------------------
 
-\textsc{2022 (current)} & Sr. Manager of Personalization and Recommender Science, \emph{Peacock Streaming (NBC)} \\
-& \footnotesize{As the Data Science leader of Personalization and Recommendations at Peacock, I am responsible for managing business relationships and growing and developing the strongest streaming team possible. So far, I have built graph neural network solutions to solve the title cold start problems, built time-series based solutions for Trending, Popularity and Top 10 algorithms, built content embedding based solutions for Binge, Because You Watched, and You Might Also Like experiences, created Reinforcement Learning solutions to solve for page staleness, and even created web applications for model explainability so editors and product teams can better understand how our models work and what they specialize in serving.}\\
-
+\textsc{Peacock} & Director and Acting VP of Data Science, Personalization and Recommendations\\
+\textsc{2022 - Now} & \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item As Director, I am continuing building on our suite of Home page and PDP personalization and also expanding my scope.
+\item I extended into new work with Search, Marketing, and Merchandizing, and increased leadership to a team of 12.
+\item I have completed multiple Generative AI projects to expand data sources and support our existing models.
+\item As the acting Vice President, I am also actively assessing 3-5 year plans and presenting in Steering Committee meetings.}
+\end{itemize}
+\end{minipage}\\
+\\
+& Sr. Manager of Data Science, Personalization and Recommendations\\
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item As Senior Manager with a smaller team of only 3, I have been able to drive total lifts of more than 3\% in hours and 1\% in streaming days during AB tests, contributing to tens of millions in incremental ad and subscriber revenue.
+\item We have built graph neural network solutions, time-series models, fully connected transformer models, NLP embeddings, and Reinforcement Learning solutions to support the creation of the over 20 models that now support the entire global suite under NBCU: Peacock, Sky Showtime, and Showmax.
+\item We created an application for executives, editors, and product teams to explain and visualize our models for transparency.}
+\end{itemize}
+\end{minipage}\\
 \multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 
-\textsc{2020 - 2022} & Sr. Manager Data Science and Analytics, \emph{Lowe's Home Improvement} \\
-& \footnotesize{As the Data Science leader focused on Merchandising at Lowe’s with a team of 17 in the US and Bangalore, I worked to create machine learning solutions for freight optimization, space optimization, and assortment optimization, developing a world-class, user friendly localization tool that gave merchants a way to negotiate with vendors and make the best decisions on what to stock in every store. In addition, I created automated database connection utilities and an automated outlier detection mechanism for data scientists in the organization which employs a novel technique of multi-modelling to create a powerful meta-algorithm capable of detecting more hidden outliers. These applications and the support we provided for them drove 2x in merchandising productivity with an incredibly efficient deep neural net model, visualized via a UX-focused React application layer.}\\
+\textsc{Lowe's} & Sr. Manager of Data Science and Analytics\\
+\textsc{2015 - 2022} & \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item With a team of 17 in the U.S. and Bangalore, I expanded on our solutions for freight, space, and assortment optimization.
+\item We developed an internal tool that gave merchants the power to estimate profit and margin of any item assortment in any set of stores, providing a way to negotiate with vendors and make the best decisions on what to stock in every store.
+\item Our assortment planning work led to 2x in merchandising productivity with an incredibly efficient deep neural net model visualized via a UX-optimized React application layer.
+\item Later, I led an ML platform team, building SSO-integrated MLFlow, easier database utilities, and created an automated outlier detection mechanism employing a novel technique of multi-modelling to create a powerful meta-algorithm.}
+\end{itemize}
+\end{minipage}\\
+\\
+& Principal Data Scientist\\
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item As Principal, I led and contributed with 4 people to deliver demand prediction neural net model rivaling IBM and SAS models in place at the time, with the capability of learning with pricing, promotion, freight, space, and assortment.
+\item I created a vendor freight optimization tool and a space optimization tool, together driving measured incremental value in the hundreds of millions and just under a billion for margin and revenue respectively.
+\item I ran SQL, Cloud and Agile process training for the entire department of over 100 data scientists, analysts, and engineers.}
+\end{itemize}
+\end{minipage}\\
+\\
+& Senior Data Scientist\\
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item As Senior, I built 30 more models, tested with a further lift of 13\%, leading to hundreds of millions in incremental revenue.
+\item I focused on automation and helped hire and train new people to take over my models in recs and personalization.
+\item I expanded into Lowe's first projects in merchandising, marketing, and store operations, working as a one-man startup.
+\item We hired 80 data scientists to expand on the projects I started and sold to internal stakeholders during this time.}
+\end{itemize}
+\end{minipage}\\
+\\
+& Data Scientist\\
+& \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item As the first data scientist at Lowe's, my first model won an AB test against Adobe with a 250\% lift in incremental revenue.
+\item I reduced cost by \$7 million/year after ending a contract and my success led to us expanding our data science program.
+\item I built 20 more models to support the home page, search, and product detail pages, driving 15\% lift in new surfaces.}
+\end{itemize}
+\end{minipage}\\
 
 \multicolumn{2}{c}{} \\
 
-%-----------------------------------------------
-
-\textsc{2019 - 2020} & Principal Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{As principal, my main goal was to get a set of data driven utilities ready for various aspects of the merchandising community at Lowe’s.
-With only four people, we were able to deliver a RNN-based demand model and expand the team to continue work, as well as a vendor freight optimization tool and a space optimization tool, driving measured incremental value in the millions and billions for margin and revenue respectively.}\\
-
-\multicolumn{2}{c}{} \\
-
-%-----------------------------------------------
-
-\textsc{2017 - 2019} & Sr. Data Scientist, \emph{Lowe's Home Improvement} \\
-& \footnotesize{During this time, I automated recommendations for a 13\% improvement in recommendations with hundreds of millions in incremental revenue, as proven by A/B tests. This boost also allowed me to buy time to refactor pipelines originally created in Alteryx into more sustainable SQL and Python, before selecting the right talent to take over what I had done alone up until then in recommendations and personalization. After that, I created proofs-of-concept with the same strategy in merchandising, marketing, and store operations. In these domains, we would later hire 80 scientists to expand out what I had originally built and sold to internal stakeholders. I taught the new hires mostly about Agile methods and cloud-based systems to align with modern practices in business, and paved the way to the cloud within Lowe's Data Science as the first adopters.}\\
-
-\multicolumn{2}{c}{} \\
-
-%-----------------------------------------------
-
-\textsc{2015 - 2017} & Data Scientist / Web Analyst, \emph{Nabler / Lowe's Home Improvement} \\
-& \footnotesize{Starting with only 3 other analysts in Lowes’ digital team, I bet I could beat Adobe Recommendations with algorithms utilizing product and user data to create personalized recommendations. I trained models on orders, cart additions, views and revenue to optimize the experience. This first model beat Adobe by 250\% in incremental revenue, allowing us to end a \$7M contract and make the case for data science at Lowe’s, expanding our reach.}\\
-
-\multicolumn{2}{c}{} \\
 
 %-----------------------------------------------
 %techniques for remote telescopes, having observed many nights on the Chilean 4.1m SOAR telescope, and also completing reduction of these data. I have helped to create and calibrate a new multi-slit spectrum slicer for the GOODMAN spectrograph that is now an active instrument. I have examined correlations between the photometric properties of galaxies and differences in kinematic and photometric inclinations, presenting results at AAS 2015 in Seattle, WA. I have created a code that fits velocity field data to functions defined by Courteau.}\\
 %using all known documentation for each burst available on the SAO/NASA Astrophysics Data System, which provides information about magnitudes in different bands as a function of time after the burst, over a wide swathe of types of bursts. My work involved data mining ADS for the creation of a MySQL server, with much more easily accessible data, creating new opportunities in a more complete analysis of GRB afterglows using all available public data. The database will be made public when completed.}\\
 
-\textsc{2012 - 2015} & Research Assistant, \emph{NC Astronomy Research Center \& UNC Astronomy}\\
-& \footnotesize{As a part of the \textbf{\href{http://resolve.astro.unc.edu/}{RESOLVE}} team under Dr. Sheila Kannappan, I ran dynamic observation, processed raw telescope data in Python and Fortran, and ran imaging for the 4.1-meter Chilean SOAR telescope, and my research involved \href{https://ui.adsabs.harvard.edu/abs/2015AAS...22533611B/abstract}{determination of 3D galaxy movement from 2D projections}.
+\textsc{Academia} & Astrophysicist, \emph{NC Astronomy Research Center \& UNC Astronomy}\\
+\textsc{2012 - 2015} & \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item With Dr. Sheila Kannappan, I ran dynamic observation, processed raw telescope data in Python and Fortran, and ran imaging for the 4.1-meter Chilean SOAR telescope, focusing on \href{https://ui.adsabs.harvard.edu/abs/2015AAS...22533611B/abstract}{determination of 3D galaxy movement from 2D projections}.
 
-In Dr. Dan Reichart's group, I helped in the creation of the largest database for Gamma Ray Burst afterglows, working heavily with spreadsheets and data manipulation in a massive SQL database. I was also an assistant in the lab component of the Introductory Astronomy course at UNC.
+\item With Dr. Dan Reichart, I worked on cataloging the largest database for Gamma Ray Burst afterglows, writing updates to a SQL database. In addition, I was a teaching assistant for the Introductory Astronomy course at UNC.
 
-With Dr. Patrick Treuthardt, I helped \href{https://ui.adsabs.harvard.edu/abs/2014AAS...22345312T/abstract}{determine relationships between out dust lane structure, axial ratios and pattern speeds of galaxies} using IRAF, analyzing data in an open format, where museum patrons could watch and ask questions. I also helped in creating informative and exciting visual learning decks for the general public. Finally, we ran interactive H-Alpha "sun-gazing" talks, where the public could use a telescope to safely see the sun and learn more about it. We were featured in Wired magazine discovering \href{http://www.wired.co.uk/article/new-hoag-type-galaxy-discovered}{the first Double Hoag's galaxy}.}\\
+\item With Dr. Patrick Treuthardt, I determined \href{https://ui.adsabs.harvard.edu/abs/2014AAS...22345312T/abstract}{relationships between galactic dust lane structure, axial ratios and pattern speeds}, analyzing data on large screens where museum patrons could watch and ask questions. We were featured in Wired and CNN after I discovered \href{https://www.sciencealert.com/scientists-just-discovered-a-brand-new-type-of-galaxy}{the first Double Hoag's galaxy}. In addition, we ran interactive H-Alpha telescope sessions for patrons to safely observe the sun.}
+\end{itemize}
+\end{minipage}\\
 %I began by designing informative videos for patrons of the Museum of Natural Science, then joined Dr. Patrick Treuthardt in completing research on the formation and curvature of dust lanes in barred spiral galaxies, with galaxies selected based on resolutions and pattern speeds from a previous paper. Answering questions about astrophysical phenomena and conducting H$\alpha$ sun observations on the roof were also a part of daily work. My research involved using IRAF and DS9 to correct over 40 galaxies for inclination, and creating B-R color index maps for each to intensify the dust features. The preliminary results were presented at AAS 2014 (details \textbf{\href{http://adsabs.harvard.edu/abs/2014AAS...22345312T}{here}}).}\\
 \multicolumn{2}{c}{} 
 
@@ -152,47 +195,28 @@ With Dr. Patrick Treuthardt, I helped \href{https://ui.adsabs.harvard.edu/abs/20
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\vspace{-10pt}
+%\vspace{-10pt}
 \section{Education}
 
 \begin{tabular}{ll}	
-2022 & MS Computer Science, \emph{Georgia Institute of Technology}\\
-2015 & BS Physics, \emph{University of North Carolina at Chapel Hill}\\
-%& \small Major: Astrophysics | \emph{Emphasis on Galaxy Evolution and Dynamics}\\
-%&\normalsize \textsc{Gpa}: 3.0\\%\hyperlink{unc}{\hfill | \footnotesize Courses and Grades}\\
-%&\\
+2022 & \hspace{0.95cm} Master's Degree in Computer Science, \emph{Georgia Institute of Technology}\\
+2015 & \hspace{0.95cm} Bachelor's Degree in Physics, \emph{University of North Carolina at Chapel Hill}\\
 
-%------------------------------------------------
-
-%\textsc{July} 2012 & Associate Degree in Science, \emph{Wake Technical Community College} \\
-%& \small Graduated with the highest honors  | \emph{Emphasis on Physics and Astronomy} %\normalsize \\
-%&\normalsize \textsc{Gpa}: 4.0\\% \hyperlink{wt}{\hfill| \footnotesize Courses and Grades}\\
-
-%------------------------------------------------
-
-%\textsc{Fall} 2009 & High School Dual Enrollment Semester at \textbf{La Sierra University}, Riverside\\
-%& \textsc{Gpa}: 4.0/4.0 \hyperlink{lsu}{\hfill | \footnotesize Courses and Grades}\\
-%&\\
 \end{tabular}
 \bigskip
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
-\vspace{-7pt}
-\section{Proficiencies}
+%\vspace{-7pt}
+\section{Expertise}
 
 \begin{tabular}{llp{11cm}}
-AI/ML &Python, Keras, Tensorflow\\
-Software &Streamlit, React, Flux/Redux, NodeTS/JS, FastAPI\\
-Data &Druid, Presto, Hive, Teradata, PostGres, and other SQL variants\\
-CICD &Git, Jenkins\\
-Cloud &GCP, AWS
-
-%\\
-
-%Astronomy &\textsc{DS9}, \textsc{GAIA}, \textsc{IRAF}
-
+AI/ML & \hspace{0.25cm} Python, Keras, Tensorflow\\
+Software & \hspace{0.25cm} Streamlit, React, Flux/Redux, NodeTS/JS, FastAPI\\
+Data & \hspace{0.25cm} Druid, Presto, Hive, HBase, Teradata, PostGres, and other SQL/NoSQL variants\\
+CICD & \hspace{0.25cm} Git, Jenkins\\
+Cloud & \hspace{0.25cm} GCP, AWS
 \end{tabular}
 %\hspace*{.1cm} I also have experience Metalworking, Soldering, Woodworking, and 3D Printing
 
@@ -207,7 +231,7 @@ Cloud &GCP, AWS
 %2015 & Recipient of SKYNET Undergraduate Research Scholarship\\
 %2014 & UNC OUR Travel Grant for American Astronomical Society 225\textsuperscript{th} Meeting\\
 %2014 & Beneficiary of NSF CAREER Award Supplement\\
-%2013 & Recipient of North Carolina Space Grant for Undergraduates\\
+%2013 & Recipient of NASA's North Carolina Space Grant for Undergraduates\\
 %2013 & Accepted as student astronomer at NRAO WV for ERIRA-UNC\\
 %2013 & Second place at the southeast regional calculus competition in GA\\
 %2012 & First place at the North Carolina Calculus competition in Gastonia \\
@@ -236,120 +260,5 @@ Cloud &GCP, AWS
 %&\\
 %\end{tabular}
 %\bigskip
-
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGES
-%----------------------------------------------------------------------------------------
-
-%\section{Languages}
-%
-%\begin{tabular}{rl}
-%
-%\textsc{English:} & Native\\
-%
-%\textsc{French:} & Conversational\\
-%
-%\end{tabular}
-%\bigskip
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS AND ACTIVITIES
-%----------------------------------------------------------------------------------------
-
-%\section{Research Interests}
-%
-%Galaxy Evolution and Morphology, Dark Matter, Data Science, Gamma Ray Bursts,  Kinematics leading to Star Formation, Instrumentation, Radio Astronomy, Statistics, and Simulation.
-%
-%\textsc{Downtime}: Hiking, Running, Swimming, Climbing, Painting, Reading, Making and Listening to Music, Singing and Dancing, and Watching Netflix.
-
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	GRADE TABLES
-%----------------------------------------------------------------------------------------
-
-%\par{\centering\Large \hypertarget{unc}{Bachelor of Science Degree in \textsc{Physics: Astrophysics} \\ at the \textsc{University of North Carolina}, Chapel Hill}\par}\vspace{0.4cm}
-%%\large{\centering Grades\par}\normalsize
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Course}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-%Advanced Math Methods I & B & 3\\
-%Astrophysics II & A & 3\\
-%Electrodynamics I & C & 3\\
-%Electrodynamics II & C+ & 3\\
-%Electronics I & -- & 4\\
-%Epistemology in Physics & A & 1\\
-%Independent Research (AMP) & A & 1\\
-%Independent Research (RESOLVE) & -- & 3\\
-%Introduction to Astronomy II & A- & 3\\
-%Mechanics I & B- & 3\\
-%Modern Radio Astronomy (ERIRA) & A & 1\\
-%Modern Physics & B- & 3\\
-%Modern Physics Lab & A- & 1\\
-%Numerical Techniques in Physics & B+ & 4\\
-%Observational Astronomy & -- & 4\\
-%Quantum Mechanics I & C & 3\\
-%Quantum Mechanics II & -- & 3\\
-%Stars, Galaxies, and Cosmology & A- & 1\\
-%Thermal Physics & -- & 3\\
-%Advanced French & B & 3\\
-%& Total & 37 (54)\\\cline{2-3}
-%&\textsc{Gpa}&\textbf{3.022}
-%\end{tabular}\bigskip
-%%\footnotesize{Note: Due to the unforeseen requirement that each student at UNC graduates within eight semesters, as a transfer student, I have been forced to take my sophomore and junior major requirement courses simultaneously, leading to a disheartening drop in GPA; however, I assure the reader this is not due completely to a lack of understanding, but is due mostly to a difficult load, and I will have a normal senior year to make up for it.}\\\
-%\end{center}
-%\hrule
-%\bigskip
-%
-%%------------------------------------------------
-%
-%\par{\centering\Large \hypertarget{wt}{Associate of Science Degree \\ at \textsc{Wake Technical Community College}, Raleigh}\par}\vspace{0.4cm}
-%%\large{\centering Grades\par}\normalsize
-%
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Course}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-%Calculus I & A & 4\\
-%Calculus II & A & 4\\
-%Calculus III & A & 4\\
-%Differential Equations & A & 3\\
-%General Physics I & A & 4\\
-%General Physics II & A & 4\\
-%General Chemistry I & A & 4\\
-%General Psychology & A & 3\\
-%Introduction to Astronomy I & A & 4\\
-%Introduction to Sociology & A & 3\\
-%Introduction to Programming & A & 3\\
-%Introduction to Logic & B & 3\\
-%Elementary French I & A & 4\\
-%Music Appreciation & A & 3\\
-%Western Civilization I & B & 3\\
-%British Literature I & B & 3\\
-%Public Speaking & A & 3\\
-%Painting I & A & 3\\
-%Tennis & A & 1\\
-%& Total & 69\\\cline{2-3}
-%&\textsc{Gpa}&\textbf{3.857}
-%\end{tabular}
-%\end{center}
-
-%----------------------------------------------------------------------------------------
-%\newpage
-%
-%\par{\centering\Large \hypertarget{lsu}{Dual Enrollment at \textsc{La Sierra University}, Riverside}\par}\normalsize
-%
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Course}} & \textsc{Grade} & \textsc{Grade Points}\\ 
-%\hline
-%College English I & A & 3\\
-%College English II & A & 3\\
-%& &\\\cline{2-3}
-%& \textsc{Gpa} & \textbf{4.0}
-%\end{tabular}
-%\end{center}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

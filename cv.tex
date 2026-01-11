@@ -26,14 +26,14 @@
 \documentclass[a4paper, 9pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
-\fontspec [Path = /Users/rwbeauch/Library/Fonts/,
+\fontspec [Path = /Users/ryanbeauchemin/Documents/Fonts/,
     UprightFont = Fontin-Regular,
     BoldFont = Fontin-Bold,
     ItalicFont = Fontin-Italic,
     SmallCapsFont = Fontin-SmallCaps
  ] {Fontin}
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont [Path = /Users/rwbeauch/Library/Fonts/,
+\setmainfont [Path = /Users/ryanbeauchemin/Documents/Fonts/,
     UprightFont = Fontin-Regular,
     BoldFont = Fontin-Bold,
     ItalicFont = Fontin-Italic,
@@ -63,7 +63,7 @@
 \usepackage{geometry}
 %\usepackage{showframe} %This line can be used to clearly show the new margins
 
-\newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+\newgeometry{vmargin={10mm}, hmargin={10mm,14mm}}   % set the margins
 
 \usepackage{enumitem}
 \setlength{\parindent}{0pt}
@@ -86,23 +86,32 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
-%\vspace{-5pt}
+\vspace{-5pt}
 \section{Experience} %Work Experience better?
 
 \begin{tabular}{l|p{15.8cm}}
 %-----------------------------------------------
-
-\textsc{Peacock} & Director and Acting VP of Data Science, Personalization and Recommendations\\
-\textsc{2022 - Now} & \begin{minipage}[t]{\linewidth}
+\textsc{Redbird} & Lead of Data Science\\
+\textsc{2025-2026} & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep, after=\strut, leftmargin=*]
 \footnotesize{
-\item As Director, I am continuing building on our suite of Home page and PDP personalization and also expanding my scope.
+\item As the lead of data science reporting directly to the CEO, I was responsible for a number of data science initiatives for a workflow building platform, including no-code model training, mix media modeling, and agentic generative AI.
+\item The work most attractive to our clients was my suite of tools that write, explain, and execute code reliably (< 2\% reported hallucination rate) to generate data science pipelines with minimal coding time. The robustness came from utilizing langgraph and langchain with OpenAI StructuredOutput API to make specialized connected agents.}
+\end{itemize}
+\end{minipage}\\
+\multicolumn{2}{c}{} \\
+
+%-----------------------------------------------
+\textsc{Peacock} & Director and Acting VP of Data Science, Personalization and Recommendations\\
+\textsc{2022 - 2025} & \begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep, after=\strut, leftmargin=*]
+\footnotesize{
+\item As Director, I continued building on our suite of Home page and PDP personalization and also expanded my scope.
 \item I extended into new work with Search, Marketing, and Merchandizing, and increased leadership to a team of 12.
 \item I have completed multiple Generative AI projects to expand data sources and support our existing models.
 \item As the acting Vice President, I am also actively assessing 3-5 year plans and presenting in Steering Committee meetings.}
 \end{itemize}
 \end{minipage}\\
-\\
 & Sr. Manager of Data Science, Personalization and Recommendations\\
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep, after=\strut, leftmargin=*]
@@ -126,7 +135,6 @@
 \item Later, I led an ML platform team, building SSO-integrated MLFlow, easier database utilities, and created an automated outlier detection mechanism employing a novel technique of multi-modelling to create a powerful meta-algorithm.}
 \end{itemize}
 \end{minipage}\\
-\\
 & Principal Data Scientist\\
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep, after=\strut, leftmargin=*]
@@ -136,7 +144,6 @@
 \item I ran SQL, Cloud and Agile process training for the entire department of over 100 data scientists, analysts, and engineers.}
 \end{itemize}
 \end{minipage}\\
-\\
 & Senior Data Scientist\\
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep, after=\strut, leftmargin=*]
@@ -147,7 +154,6 @@
 \item We hired 80 data scientists to expand on the projects I started and sold to internal stakeholders during this time.}
 \end{itemize}
 \end{minipage}\\
-\\
 & Data Scientist\\
 & \begin{minipage}[t]{\linewidth}
 \begin{itemize}[nosep, after=\strut, leftmargin=*]
@@ -212,7 +218,7 @@
 \section{Expertise}
 
 \begin{tabular}{llp{11cm}}
-AI/ML & \hspace{0.25cm} Python, Keras, Tensorflow\\
+AI/ML & \hspace{0.25cm} Python, Keras, Tensorflow, Langgraph, Langchain\\
 Software & \hspace{0.25cm} Streamlit, React, Flux/Redux, NodeTS/JS, FastAPI\\
 Data & \hspace{0.25cm} Druid, Presto, Hive, HBase, Teradata, PostGres, and other SQL/NoSQL variants\\
 CICD & \hspace{0.25cm} Git, Jenkins\\
